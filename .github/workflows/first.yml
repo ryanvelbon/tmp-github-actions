@@ -15,5 +15,12 @@ jobs:
         run: pwd
 
       - name: List all web projects
-        run: ls /var/www
+        run: ls /var/www/html
+
+      - name: Execute a series of commands
+        run: |
+          echo "one"
+          echo "two"
+          echo "three four five"
+          echo "once I caught a fish alive"
 
