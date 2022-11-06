@@ -8,7 +8,7 @@ jobs:
 
   boo:
 
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-${{ ubuntu-version }}
 
     steps:
       - name: Print working directory
