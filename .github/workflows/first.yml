@@ -1,0 +1,19 @@
+name: First Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+
+  boo:
+
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Print working directory
+        run: pwd
+
+      - name: List all web projects
+        run: ls /var/www
+
